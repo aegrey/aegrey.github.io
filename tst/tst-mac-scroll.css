@@ -1,0 +1,42 @@
+.tst-scroll {
+  position : relative;
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+}
+.tst-scroll > .tst-scroll-content {
+  position      : absolute;
+  overflow      : scroll;
+  overflow-x    : hidden;
+  top           : 0;
+  right         : 0;
+  bottom        : 0;
+  left          : 0;
+  padding-right: 17px;
+}
+.tst-scroll > .tst-scroll-content::-webkit-scrollbar {
+  display: none;
+}
+.has-scrollbar > .tst-scroll-content::-webkit-scrollbar {
+  display: block;
+}
+.tst-scroll > .nano-pane {
+  background : #f9f9f9;
+  background: -webkit-linear-gradient(left, #f6f6f6, #fcfcfc);
+  background: -moz-linear-gradient(right, #f6f6f6, #fcfcfc);
+  background: linear-gradient(to right, #f6f6f6, #fcfcfc);
+  border-left: 1px solid #f0f0f0;
+  position   : absolute;
+  width      : 14px;
+  right      : 0;
+  top        : 0;
+  bottom     : 0;
+}
+.tst-scroll > .nano-pane > .nano-slider {
+  background: #cccccc;
+  position              : relative;
+  margin                : 1px 2px;
+  -moz-border-radius    : 6px;
+  -webkit-border-radius : 6px;
+  border-radius         : 6px;
+}
